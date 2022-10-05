@@ -51,6 +51,7 @@ const Write = () => {
 	return (
 		<div className="add">
 			<div className="content">
+				<h2>Publish a new blog</h2>
 				<input
 					type="text"
 					placeholder="Title"
@@ -67,29 +68,6 @@ const Write = () => {
 				</div>
 			</div>
 			<div className="menu">
-				<div className="item">
-					<h1>Publish</h1>
-					<span>
-						<b>Status: </b> Draftf
-					</span>
-					<span>
-						<b>Visibility: </b> Public
-					</span>
-					<input
-						style={{ display: "none" }}
-						type="file"
-						name=""
-						id="file"
-						onChange={(e) => setImg(e.target.files[0])}
-					/>
-					<label className="file" htmlFor="file">
-						Upload image
-					</label>
-					<div className="buttons">
-						<button>Save as a draft</button>
-						<button onClick={handleSubmit}>Publish</button>
-					</div>
-				</div>
 				<div className="item">
 					<h1>Category</h1>
 					<div className="cat">
@@ -157,6 +135,29 @@ const Write = () => {
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="food">Food</label>
+					</div>
+				</div>
+				<div className="item">
+					<h1>Publish</h1>
+					<span>
+						<b>Status: </b> Draftf
+					</span>
+					<span>
+						<b>Visibility: </b> Public
+					</span>
+					<input
+						style={{ display: "none" }}
+						type="file"
+						name=""
+						id="file"
+						onChange={(e) => setImg(e.target.files[0])}
+					/>
+					<label className="file" htmlFor="file">
+						Upload image
+					</label>
+					<div className="buttons">
+						<button>Save as a draft</button>
+						<button onClick={handleSubmit}>Publish</button>
 					</div>
 				</div>
 			</div>
