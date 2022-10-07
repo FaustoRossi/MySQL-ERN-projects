@@ -72,66 +72,66 @@ const Write = () => {
 					<h1>Category</h1>
 					<div className="cat">
 						<input
-							checked={cat === "art"}
 							type="radio"
+							checked={cat === "art"}
 							name="cat"
-							id="art"
 							value="art"
+							id="art"
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="art">Art</label>
 					</div>
 					<div className="cat">
 						<input
-							checked={cat === "science"}
 							type="radio"
+							checked={cat === "science"}
 							name="cat"
-							id="science"
 							value="science"
+							id="science"
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="science">Science</label>
 					</div>
 					<div className="cat">
 						<input
-							checked={cat === "tech"}
 							type="radio"
+							checked={cat === "technology"}
 							name="cat"
-							id="tech"
-							value="tech"
+							value="technology"
+							id="technology"
 							onChange={(e) => setCat(e.target.value)}
 						/>
-						<label htmlFor="tech">Technology</label>
+						<label htmlFor="technology">Technology</label>
 					</div>
 					<div className="cat">
 						<input
-							checked={cat === "cinema"}
 							type="radio"
+							checked={cat === "cinema"}
 							name="cat"
-							id="cinema"
 							value="cinema"
+							id="cinema"
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="cinema">Cinema</label>
 					</div>
 					<div className="cat">
 						<input
-							checked={cat === "design"}
 							type="radio"
+							checked={cat === "design"}
 							name="cat"
-							id="design"
 							value="design"
+							id="design"
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="design">Design</label>
 					</div>
 					<div className="cat">
 						<input
-							checked={cat === "food"}
 							type="radio"
+							checked={cat === "food"}
 							name="cat"
-							id="food"
 							value="food"
+							id="food"
 							onChange={(e) => setCat(e.target.value)}
 						/>
 						<label htmlFor="food">Food</label>
